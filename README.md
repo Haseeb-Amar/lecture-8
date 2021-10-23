@@ -1,5 +1,5 @@
 # lecture-8
-days of the month
+days of the month excercise 1
 #include <iostream>
 using namespace std;
 int main()
@@ -53,4 +53,52 @@ int main()
     }
 
     return 0;
+}
+fuel me up excercise 2
+    #include <iostream>
+using namespace std;
+int main()
+{
+    cout << " Kindly enter how many litres you want to fill up your car\n ";
+    int lit;
+    cin >> lit;
+    if (lit != 0)
+    {
+        cout << "You have selected " << lit << " litres\n";
+        cout << "Kindly select the fuel type you want for your car\n";
+        cout << "Enter 'p' for Petrol\n 'd' for Diesel\n";
+        char fuel;
+        cin >> fuel;
+        switch (fuel)
+        {
+        case 'P':
+        case 'p':
+        {
+
+            cout << "You have selected Petrol for filling up your car\n ";
+            int a;
+            a = lit * 2.4;
+            cout << "\nThe price per litres is 2.4 now the total is " << a;
+            break;
+        }
+        case 'd':
+        case 'D':
+        {
+            cout << "You have selected Diesel for filling up your car ";
+            int b;
+            b = lit * 3.6;
+            cout << "\nThe price per litres is 3.6 now the total is " << b;
+            break;
+
+            break;
+        }
+
+        default:
+        {
+            cout << "the value does not exists"; break;
+        }
+        }
+    }
+
+
 }
