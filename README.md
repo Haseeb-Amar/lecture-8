@@ -102,3 +102,52 @@ int main()
 
 
 }
+switch temp excercise 3
+    
+
+#include <iostream>
+
+using namespace std;
+int main()
+{
+
+	cout << "what temperature you want to convert" << endl;
+	cout << "if you want to convert celcius to fahrenheit type 'c'" << endl;
+	cout << "if you want to convert fahreheit to celcius type 'f'" << endl;
+
+	char select;
+	int temp;
+	cin >> select;
+	switch (select)
+	{
+	case 'c':
+	case 'C':
+
+	{
+		cout << "\nenter the temp to convert from celcius to fahrenheit\n";
+		cin >> temp;
+		temp = (temp * 1.8) + 32;
+		cout << "\n The temperature is " << temp;
+		break;
+	}
+	case 'f':
+	case 'F':
+	{
+		cout << "\nenter the temp to convert from fahrenheit to celcius\n";
+		cin >> temp;
+		temp = (temp - 32) * 0.5556;
+		cout << "\n The temperature is " << temp;
+		break;
+	}
+
+	default:
+	{
+		cout << "invalid";
+		break;
+	}
+
+	}
+	return 0;
+}
+
+
